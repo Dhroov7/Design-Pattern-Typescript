@@ -36,7 +36,7 @@ class Reactangle implements Shape {
 
 class ShapeFactory {
     createShape(shapeType: string, ...args: number[]): any {
-        switch (shapeType) {
+        switch (shapeType.toLowerCase()) {
             case 'circle': {
                 return new Circle(...args);
             }
